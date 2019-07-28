@@ -1,1 +1,1 @@
-# FS19_GlobalCompanyAddOn_VehicleCam
+# FS19_GlobalCompanyAddOn_ManureBarrelFix
