@@ -8,8 +8,8 @@
     </title>
 	
 	<description>
-		<en><![CDATA[bla]]></en>
-		<de><![CDATA[bla]]></de>
+		<en><![CDATA[Fix for Manurebarrels: If it is empty, it is now switched off automatically.]]></en>
+		<de><![CDATA[Fix für Güllefässer: Ist es leer, wird es nun automatisch abgeschalten.]]></de>
 	</description>	
 	
 	<iconFilename>Gc_ManureBarrelFix.dds</iconFilename>
@@ -20,10 +20,6 @@
             <customClass name="Gc_ManureBarrelFix"/>
         </customClasses>
     </globalCompany>
-
-	<l10n>
-			
-	</l10n>	
 		
     <extraSourceFiles>
         <sourceFile filename="GC_Checker.lua" />

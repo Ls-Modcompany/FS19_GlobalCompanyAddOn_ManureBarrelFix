@@ -1,7 +1,7 @@
 -- 
 -- GlobalCompany - AddOn - ManureBarrelFix
 -- 
--- @Interface: 1.2.0.1 b3264
+-- @Interface: 1.4.1.0 b5332
 -- @Author: LS-Modcompany / kevink98
 -- @Date: 28.07.2019
 -- @Version: 1.0.0.0
@@ -14,7 +14,7 @@
 -- 		- initial fs19 (kevink98)
 -- 
 -- Notes:
--- 
+--      - fix missing attribute 'turnOffIfNotAllowed' on giants vehicles
 -- 
 -- ToDo:
 -- 
@@ -29,13 +29,10 @@ function Gc_ManureBarrelFix.prerequisitesPresent(specializations)
 end;
 
 function Gc_ManureBarrelFix.registerEventListeners(vehicleType)
-    --SpecializationUtil.registerFunction(vehicleType, "setDirt", Gc_ManureBarrelFix.setDirt);
 	SpecializationUtil.registerEventListener(vehicleType, "onPostLoad", Gc_ManureBarrelFix);
 end;
 
 function Gc_ManureBarrelFix:onPostLoad(savegame)
-    print(string.format("on post load: %s", self.spec_turnOnVehicle ~= nil))
-
     local spec = self.spec_turnOnVehicle;
     if spec ~= nil then
         spec.turnOffIfNotAllowed = true;        
