@@ -12,7 +12,7 @@
 		<de><![CDATA[Fix für Güllefässer: Ist es leer, wird es nun automatisch abgeschalten.]]></de>
 	</description>	
 	
-	<iconFilename>Gc_ManureBarrelFix.dds</iconFilename>
+	<iconFilename>GC_AddOnManureBarrelFix.dds</iconFilename>
 	<multiplayer supported="true"/>
 
     <globalCompany minimumVersion="1.0.0.0">
